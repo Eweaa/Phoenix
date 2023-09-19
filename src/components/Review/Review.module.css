@@ -1,0 +1,22 @@
+.Review {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+  }
+  .Review .content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .Review .content img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Review .content p {
+    display: block;
+    margin: 0;
+    overflow-wrap: break-word;
+  }

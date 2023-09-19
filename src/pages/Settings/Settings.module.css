@@ -1,0 +1,27 @@
+.SForm {
+  border-radius: 15px;
+  border: none;
+  position: relative;
+}
+.SForm .ProfileImg input {
+  display: none;
+}
+.SForm .ProfileImg img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.SForm .ProfileImg img:hover {
+  cursor: pointer;
+}
+.SForm .SBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #008894;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}/*# sourceMappingURL=Settings.module.css.map */

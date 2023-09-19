@@ -1,0 +1,100 @@
+.DoctorCard {
+  display: flex;
+  background: white;
+  height: 300px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.DoctorCard .Doctorimg {
+  width: 18%;
+}
+.DoctorCard .Doctorimg img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.DoctorCard .info {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+.DoctorCard .info p {
+  margin: 0;
+}
+.DoctorCard .Appointments {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.DoctorCard .Appointments .Time {
+  background: #f0fbfc;
+  display: inline-block;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.09);
+  position: relative;
+}
+.DoctorCard .Appointments .Time button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #008894;
+  color: white;
+  border-radius: 5px;
+}
+.DoctorCard .Appointments .Time p {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.DoctorCard .Appointments .Time ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.DoctorCard .Appointments .Time ul input {
+  display: none;
+}
+.DoctorCard .Appointments .Time ul input:checked + label {
+  background: #008894;
+  color: white;
+}
+.DoctorCard .Appointments .Time ul label {
+  display: inline-block;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media(width < 500px){
+  .Appointments{
+    display: none !important;
+  }
+
+  .Doctorimg{
+    width: 35% !important; 
+  }
+
+  .Doctorimg img{
+    width: 100%;
+    object-fit: cover; 
+  }
+
+  .info{
+    width: 55% !important;
+  }
+
+  .optional{
+    display: none;
+  }
+  .info p{
+    /* display: none; */
+    /* justify-content: space-around; */
+  }
+}

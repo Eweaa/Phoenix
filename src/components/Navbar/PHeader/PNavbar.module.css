@@ -1,0 +1,94 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0fbfc;
+  }
+  .nav .MobileLinks {
+    position: absolute;
+  }
+  .nav .MobileLinks div {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    transition: all ease-in-out 0.4s;
+    translate: -140%;
+  }
+  .nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  .nav .logo img {
+    width: 50px;
+  }
+  .nav .logo h2 {
+    color: #008894;
+    font-weight: bold;
+  }
+  .nav .search {
+    width: 50%;
+  }
+  .nav .search input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+  .nav .search input:focus {
+    outline: none;
+  }
+  .nav .Profile {
+    display: flex;
+  }
+  .nav .Profile .bookBtn {
+    border-radius: 25px;
+    width: auto;
+    color: #008894;
+    background: #d9d9d9;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all ease-in-out 0.4s;
+  }
+  .nav .Profile .bookBtn:hover {
+    color: white;
+    background: #008894;
+  }
+  .nav .Profile button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    color: #008894;
+    background: #d9d9d9;
+    transition: all ease-in-out 0.4s;
+  }
+  .nav .Profile button:hover {
+    background: #008894;
+    color: white;
+  }
+  .nav .Profile button img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Hamburger{
+    display: none;
+  }
+  
+  @media (width < 500px) {
+    .nav .MobileLinks {
+      translate: 100%;
+    }
+    .nav .logo h2, .nav .logo img {
+      display: none;
+    }
+    .nav .Profile a {
+      display: none;
+    }
+    .search{
+      width: 80% !important;
+    }
+    .Hamburger{
+      display: block;
+    }
+  }

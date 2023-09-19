@@ -1,0 +1,136 @@
+.Layout {
+    display: flex;
+    height: 90vh;
+  }
+  .Layout .sidebar {
+    transition: all ease-in-out 0.4s;
+  }
+  .Layout nav {
+    display: inline-block;
+    width: 20%;
+    /* height: 100vh; */
+  }
+  .Layout nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  .Layout nav ul li {
+    padding: 10px;
+  }
+  .Layout nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: grey;
+    transition: all ease-in-out 0.2s;
+  }
+  .Layout nav ul li a svg {
+    color: #008894;
+  }
+  .Layout nav ul li a:hover {
+    background: #008894;
+    color: white;
+  }
+  .Layout nav ul li a:hover svg {
+    color: white;
+  }
+
+  .Layout main aside{
+    background: white;
+  }
+
+  .Layout main .FriendRequest {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  .Layout main .FriendRequest span {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #008894;
+    background: #E5EDFF;
+  }
+
+  .Layout main {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 3fr 1fr;
+    background: #f0fbfc;
+    border-radius: 10px;
+  }
+
+  .Layout .Chatbot {
+    outline: none;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #008894;
+  }
+  .Layout .Chatbot img {
+    width: 100%;
+  }
+
+  .Hamburger{
+    display: none;
+  }
+  
+  .MobileAside{
+    z-index: 10;
+    width: fit-content;
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    transition: all ease-in-out .25s;
+    position: fixed;
+    background: #008894;
+  }
+
+  .MobileAside ul{
+    all: unset;
+  }
+
+  .MobileAside ul li{
+    padding: 1rem;
+  }
+
+  .MobileAside ul a{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .MobileAside ul a:hover{
+    color: #008894;
+    background: white;
+  }
+  
+  @media (width < 500px) {
+    .Hamburger{
+      display: block;
+    }
+    .Layout aside {
+      display: none;
+    }
+    .Layout aside ul li a span {
+      display: none;
+    }
+    .Layout main {
+      width: 100%;
+      grid-template-columns: 4fr;
+    }
+
+    .Layout nav{
+      display: none;
+    }
+  }

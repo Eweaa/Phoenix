@@ -1,0 +1,41 @@
+.Reviews {
+    background: white;
+  }
+  .Reviews h6 {
+    display: inline-block;
+    color: #008894;
+    position: relative;
+    margin: 0;
+  }
+  .Reviews h6::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    background-color: #008894;
+  }
+  .content { 
+    display: flex; 
+    width: 100%; 
+    border-radius: 10px; 
+    margin-bottom: 30px; 
+    background-color: #fff; 
+    /* position: relative; */ 
+  } 
+  .docImg { 
+    /* position: absolute; */ 
+    margin: 20px; 
+    height: 300px; 
+    border-radius: 8px; 
+  } 
+  .rightSide { 
+    margin-top: 20px; 
+  } 
+
+  @media(width < 500px){
+    .content{
+      flex-direction: column;
+    }
+  }

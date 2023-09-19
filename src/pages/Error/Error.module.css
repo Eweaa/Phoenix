@@ -1,0 +1,44 @@
+.Error {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: #f0fbfc;
+}
+.Error .LD {
+  width: 60%;
+}
+.Error .LD .ErrorImg {
+  position: absolute;
+  z-index: 1;
+  width: 550px;
+  top: 160px;
+}
+.Error .LD .Polygon1 {
+  position: absolute;
+  height: 100%;
+}
+.Error .RD {
+  width: 40%;
+}
+.Error .RD div {
+  font-size: 60px;
+  font-weight: 700;
+  color: #008894;
+  width: 550px;
+  position: absolute;
+  top: 30%;
+}
+.Error .RD div a {
+  background: #008894;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 10px;
+}
+.Error .RD .Polygon2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}/*# sourceMappingURL=Error.module.css.map */

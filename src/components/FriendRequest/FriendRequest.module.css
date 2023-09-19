@@ -1,0 +1,42 @@
+.FriendRequest {
+  display: flex;
+}
+.FriendRequest img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.FriendRequest .data {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.FriendRequest button {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: grey;
+  display: inline-block;
+  position: relative;
+}
+.FriendRequest button:first-child {
+  color: #008894;
+}
+.FriendRequest button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #008894;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+.FriendRequest button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}/*# sourceMappingURL=FriendRequest.module.css.map */
