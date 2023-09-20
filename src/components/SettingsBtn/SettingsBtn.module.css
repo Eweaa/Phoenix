@@ -1,0 +1,58 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.container {
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 55px;
+  }
+  .imgModi {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .profileHeader {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+  }
+  .btnModi {
+    font-size: 14px;
+    text-decoration: none;
+    color: #4e5d78;
+  }
+  .setIcon {
+    display: flex;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .iconMo {
+    margin-right: 25px;
+  }
+  .iconMoh {
+    margin-left: 75px;
+    width: 28px;
+  }
+  .iconMohh {
+    margin-left: 165px;
+  }
+  .upBtn {
+    position: relative;
+  }
+  .profBar {
+    position: absolute;
+    right: -1px;
+    bottom: 2px;
+    width: 44px;
+    height: 39px;
+    /* background-image: url("https://th.bing.com/th/id/OIP.1xtkWobfLlaNWXop1_t0EQHaHa?pid=ImgDet&w=1080&h=1080&rs=1"); */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

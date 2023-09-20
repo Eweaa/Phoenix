@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 import NavbarCSS from "./PNavbar.module.css";
 import Phoenix from "../../../Assets/Phoenix.png";
+import SettingsBtn from '../../SettingsBtn/SettingsBtn';
+import MessageBtn from '../../MessagesBtn/MessageBtn';
+import NotificationBtn from '../../NotificationBtn/NotificationBtn';
 
 interface Props {
   aside:Boolean,
@@ -34,10 +37,10 @@ const PNavbar: React.FC<Props> = ({ aside, setAside }) => {
         >
           Book Now
         </Link>
-        {/* <Bell opt1="1" />
-        <MessengerIcon />
-        <Settings /> */}
-        <div></div>
+        {/* <Bell opt1="1" /> */}
+        {/* <NotificationBtn /> */}
+        <MessageBtn />
+        {/* <SettingsBtn /> */}
       </div>
     </header>
   )

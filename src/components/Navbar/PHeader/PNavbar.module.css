@@ -82,11 +82,11 @@
     .nav .logo h2, .nav .logo img {
       display: none;
     }
-    .nav .Profile a {
+    .nav .Profile {
       display: none;
     }
     .search{
-      width: 80% !important;
+      width: 90% !important;
     }
     .Hamburger{
       display: block;

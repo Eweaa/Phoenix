@@ -1,0 +1,49 @@
+.RQT {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.17);
+}
+.RQT .thead {
+  border: none !important;
+  background: #008894;
+}
+.RQT .thead th {
+  color: white;
+  padding: 20px;
+}
+.RQT tr {
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+.RQT tr::after {
+  content: "";
+  height: 1px;
+  width: 96%;
+  background: #D9D9D9;
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+}
+.RQT td {
+  padding: 20px;
+}
+.RQT .cnclBtn {
+  color: black;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.RQT .cnfrmBtn {
+  color: white;
+  background: #008894;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.RQT .NB::after {
+  height: 0;
+}/*# sourceMappingURL=Requests.module.css.map */

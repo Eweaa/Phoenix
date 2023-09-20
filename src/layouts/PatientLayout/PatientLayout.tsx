@@ -92,6 +92,7 @@ const PatientLayout: React.FC = () => {
         </div>
 
         <div className={[LayoutCSS.Layout, 'p-2'].join(' ')}>
+
             <nav>
                 <ul>
                     <li>
@@ -152,7 +153,6 @@ const PatientLayout: React.FC = () => {
             </nav>
 
             <main>
-
                 <div className='p-4' style={{overflowY:'scroll'}}>
                     <Outlet />
                 </div>
@@ -167,6 +167,7 @@ const PatientLayout: React.FC = () => {
                     {friendRequests.map((friendRequest) => <FriendRequest key = {friendRequest.id} name={friendRequest.name} Img={GenericUser}/>)}
                 </aside>
             </main>
+
 
 
             <button className={[LayoutCSS.Chatbot, 'p-2'].join(' ')} onClick={() => setChatbot(!chatbot)} style={{display: chatbot ? 'none' : 'block'}}>
